@@ -66,6 +66,22 @@ npm run build
 npm run preview
 ```
 
+## Cloudflare Deploy (Wrangler)
+
+This project is configured for `npx wrangler deploy` via `wrangler.jsonc`.
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. Deploy:
+```bash
+npx wrangler deploy
+```
+
+Note: static assets are deployed from `dist`, and SPA fallback is enabled for React Router routes.
+
 ## GitHub Setup
 
 1. Initialize git (if needed):
